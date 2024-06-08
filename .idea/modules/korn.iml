@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="file://$MODULE_DIR$/../../korn" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="BSP" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../out/korn/compile.dest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../korn">
+      <sourceFolder url="file://$MODULE_DIR$/../../korn/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="BSP: beaver-cc-0.9.11" level="project" />
+    <orderEntry type="library" name="BSP: beaver-rt-0.9.11" level="project" />
+    <orderEntry type="library" name="BSP: jflex-1.7.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="BSP: korn 依赖项">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../korn/compile-resources" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="BSP: korn 测试依赖项">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="BSP: scala-library-2.13.12" level="project" />
+    <orderEntry type="module-library">
+      <library name="BSP: scala-sdk-2.13.12" type="Scala">
+        <properties>
+          <compiler-classpath>
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar" />
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar" />
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar" />
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar" />
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar" />
+            <root url="file://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar" />
+          </compiler-classpath>
+          <compiler-bridge-binary-jar>file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala2-sbt-bridge/jars/scala2-sbt-bridge-2.13.12.jar</compiler-bridge-binary-jar>
+        </properties>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

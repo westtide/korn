@@ -37,6 +37,7 @@ object Main {
   var write = false
   var timeout: Duration = 900.seconds // SV-COMP default
   var tools = mutable.Buffer[Tool]()
+  var c2chc = false
 
   var files = mutable.Buffer[String]()
   var out = System.out
@@ -179,6 +180,11 @@ object Main {
         c.bits = 64
         configure(rest)
 
+      case "--c2chc" :: rest =>
+        println("yes c2chc")
+        c2chc = true
+        configure(rest)
+
       case "--" :: rest =>
         add(Tool.generic(timeout, model, write, expect, rest))
 
@@ -230,6 +236,16 @@ object Main {
           val to = write_smt2 getOrElse smt2(file)
           if (tool.write)
             info("clauses:      " + to)
+
+          // If --c2chc option is enabled and the tool is Eldarica, output the SMT2 file
+          if (c2chc ) {
+            println("Yes c2chc")
+            val c2chcFile = new File(to)
+            val writer = new FileWriter(c2chcFile)
+            writer.write(unit.toString) // Adjust this line as needed to write the actual SMT2 content
+            writer.close()
+            info(s"SMT2 file for Eldarica written to: $c2chcFile")
+          }
 
           val result = tool.check(unit, to)
 

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BSP: beaver-rt-0.9.11" external-system-id="BSP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/korn/lib/beaver-rt-0.9.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

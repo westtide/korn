@@ -1,0 +1,570 @@
+Mill in BSP mode, version 0.11.5, Fri Jun 07 20:38:52 CST 2024
+Running in BSP mode with hardcoded startSession command
+Trying to load BSP server...
+Reading worker classpath from file: /Users/westtide/Developer/korn/.bsp/mill-bsp-0.11.5.resources
+BSP server started
+Entered buildInitialize InitializeBuildParams [
+  displayName = "IntelliJ-BSP"
+  version = "2024.1.21"
+  bspVersion = "2.0"
+  rootUri = "file:/Users/westtide/Developer/korn/"
+  capabilities = BuildClientCapabilities [
+    languageIds = ArrayList (
+      "scala",
+      "java"
+    )
+  ]
+  dataKind = null
+  data = {"clientClassesRootDir":"file:/Users/westtide/Developer/korn/out/","supportedScalaVersions":[]}
+]
+extra data: {"clientClassesRootDir":"file:/Users/westtide/Developer/korn/out/","supportedScalaVersions":[]} of type class com.google.gson.JsonObject
+buildInitialize took 1 msec
+buildInitialize result: InitializeBuildResult [
+  displayName = "mill-bsp"
+  version = "0.11.5"
+  bspVersion = "2.1.0-M7"
+  capabilities = BuildServerCapabilities [
+    compileProvider = CompileProvider [
+      languageIds = SeqWrapper (
+        "java",
+        "scala"
+      )
+    ]
+    testProvider = TestProvider [
+      languageIds = SeqWrapper (
+        "java",
+        "scala"
+      )
+    ]
+    runProvider = RunProvider [
+      languageIds = SeqWrapper (
+        "java",
+        "scala"
+      )
+    ]
+    debugProvider = DebugProvider [
+      languageIds = SeqWrapper ()
+    ]
+    inverseSourcesProvider = true
+    dependencySourcesProvider = true
+    dependencyModulesProvider = true
+    resourcesProvider = true
+    outputPathsProvider = true
+    buildTargetChangedProvider = false
+    jvmRunEnvironmentProvider = true
+    jvmTestEnvironmentProvider = true
+    canReload = true
+  ]
+  dataKind = null
+  data = null
+]
+Build initialized
+Entered workspaceReload
+workspaceReload took 0 msec
+workspaceReload result: unsupportedWorkspaceReload
+Entered workspaceBuildTargets
+BSP/startSession: Starting BSP session
+Updating Evaluator: Some(List(EvaluatorImpl(/Users/westtide/.mill/ammonite,/Users/westtide/Developer/korn,/Users/westtide/Developer/korn/out,/Users/westtide/Developer/korn/out,,mill.util.PrefixLogger@57b9e423,481963126,663716901,HashMap(),HashMap(CONDA_SHLVL -> 1, CONDA_PYTHON_EXE -> /Users/westtide/opt/anaconda3/bin/python, XPC_SERVICE_NAME -> application.com.jetbrains.intellij.131114165.131115053, COPT_LICENSE_DIR -> /Applications/copt60, COMMAND_MODE -> unix2003, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS -> /Users/westtide/Library/WebKit/Databases, __CF_USER_TEXT_ENCODING -> 0x1F5:0x19:0x34, ZSH -> /Users/westtide/.oh-my-zsh, OCAML_TOPLEVEL_PATH -> /Users/westtide/.opam/4.14.1/lib/toplevel, CAML_LD_LIBRARY_PATH -> /Users/westtide/.opam/4.14.1/lib/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml, CONDA_PREFIX -> /Users/westtide/opt/anaconda3, LESS -> -R, CONDA_PROMPT_MODIFIER -> (base) , SSH_AUTH_SOCK -> /private/tmp/com.apple.launchd.T9WQqvpXzu/Listeners, SHELL -> /bin/zsh, LOGNAME -> westtide, PATH -> /opt/homebrew/opt/llvm/bin:/opt/homebrew/Cellar/llvm/17.0.6/bin/:/opt/homebrew/opt/sqlite/bin:/Users/westtide/.opam/4.14.1/bin:/opt/homebrew/opt/ruby/bin:/usr/local/opt/curl/bin:/usr/local/opt/curl/bin:/Applications/copt60/bin:/usr/local/opt/ruby/bin:/Users/westtide/opt/anaconda3/bin:/Users/westtide/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/westtide/.cargo/bin:/Users/westtide/Library/Application Support/JetBrains/Toolbox/scripts:/usr/local/bin:/Users/westtide/Library/Application Support/Coursier/bin, _CE_M -> , LSCOLORS -> Gxfxcxdxbxegedabagacad, HOMEBREW_REPOSITORY -> /opt/homebrew, HOMEBREW_CELLAR -> /opt/homebrew/Cellar, DYLD_LIBRARY_PATH -> /Applications/copt60/lib:, CONDA_EXE -> /Users/westtide/opt/anaconda3/bin/conda, CONDA_DEFAULT_ENV -> base, HOME -> /Users/westtide, HOMEBREW_PREFIX -> /opt/homebrew, INFOPATH -> /opt/homebrew/share/info:, USER -> westtide, MANPATH -> /opt/homebrew/share/man::, XPC_FLAGS -> 0x0, GPG_TTY -> not a tty, TMPDIR -> /var/folders/l0/035kjkgd0fj2x0brjx0bs7dh0000gn/T/, OPAM_SWITCH_PREFIX -> /Users/westtide/.opam/4.14.1, SHLVL -> 0, PWD -> /Users/westtide/Developer/korn, IDEA_INITIAL_DIRECTORY -> /, LC_CTYPE -> zh_CN.UTF-8, PAGER -> less, COPT_HOME -> /Applications/copt60, _CE_CONDA -> , __CFBundleIdentifier -> com.jetbrains.intellij),true,Some(1),Map(/Users/westtide/Developer/korn/build.sc -> (1347861379,List())),TreeMap(millbuild.MiscInfo_build$#<init>()void -> 1431413600, millbuild.MiscInfo_build$#millBaseModuleInfo$lzycompute()mill.main.RootModule$Info -> -2003350528, millbuild.MiscInfo_build$#millBaseModuleInfo()mill.main.RootModule$Info -> 794709195, millbuild.MiscInfo_build$#millBuildRootModuleInfo$lzycompute()mill.runner.MillBuildRootModule$Info -> -431147830, millbuild.MiscInfo_build$#millBuildRootModuleInfo()mill.runner.MillBuildRootModule$Info -> -1022306541, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$1()scala.Tuple2 -> -30363144, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$10(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1007924386, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$11(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -2092860432, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$12$adapted(mill.scalalib.ScalaModule$ScalaTests)java.lang.Object -> -1662161361, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$12(mill.scalalib.ScalaModule$ScalaTests)boolean -> -1375155712, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$13(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 1606931587, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$14(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1799478711, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$15(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1595240996, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$16(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 4471635, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$17(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 523076494, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$18(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1182190029, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$19(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 1792974061, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$2(mill.scalalib.ScalaModule$ScalaTests)mill.scalalib.IvyDepsTreeArgs -> -821183925, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$20()scala.Tuple2 -> 2050914769, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$21(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> -1855849864, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$22(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 1031624428, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$23(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 1459214696, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$24(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 224149620, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$25(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> -1127153357, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$26(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 1725893236, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$27(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 324159236, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$28(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> -460614501, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$29(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> -1041341629, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$3(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 1436361084, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$30(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> -512615016, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$31(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 1387794265, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$32(millbuild.build,scala.collection.immutable.Seq)mill.define.Command -> 333126295, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$33()scala.Tuple2 -> -331000000, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$34(millbuild.build$korn$)mill.scalalib.IvyDepsTreeArgs -> -1362587392, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$35(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> 1897621199, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$36(millbuild.build$korn$)mill.define.Task -> 2062451069, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$37(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> 148780290, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$38(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -303172596, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$39(millbuild.build$korn$)mill.define.Task -> -1501751839, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$4(mill.scalalib.ScalaModule$ScalaTests)mill.define.Task -> -486179136, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$40(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -1205088936, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$41(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> 2048123028, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$42(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -1334024899, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$43(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -913204033, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$44$adapted(millbuild.build$korn$)java.lang.Object -> -264931851, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$44(millbuild.build$korn$)boolean -> -3635730, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$45(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -190109022, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$46(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> -557996638, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$47(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> 168256838, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$48(millbuild.build$korn$,scala.collection.immutable.Seq)mill.define.Command -> 1080294188, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$5(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> 1735278497, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$6(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1525655144, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$7(mill.scalalib.ScalaModule$ScalaTests)mill.define.Task -> -2114698820, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$8(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -412939071, millbuild.MiscInfo_build$.$anonfun$millBaseModuleInfo$9(mill.scalalib.ScalaModule$ScalaTests,scala.collection.immutable.Seq)mill.define.Command -> -1755958614, millbuild.MiscInfo_build$.$anonfun$millBuildRootModuleInfo$1(java.lang.String)os.Path -> 1538429025, millbuild.MiscInfo_build$.$deserializeLambda$(java.lang.invoke.SerializedLambda)java.lang.Object -> -701645390, millbuild.MiscInfo_build$.<clinit>()void -> -56567324, millbuild.MiscInfo_build.millBaseModuleInfo()mill.main.RootModule$Info -> -610966294, millbuild.MiscInfo_build.millBuildRootModuleInfo()mill.runner.MillBuildRootModule$Info -> -486108892, millbuild.build#<init>()void -> -976132057, millbuild.build#korn$lzycompute$1()void -> 905886878, millbuild.build#korn()millbuild.build$korn$ -> -713106282, millbuild.build$#<init>()void -> -1612597931, millbuild.build$.<clinit>()void -> 1015614061, millbuild.build$korn$#<init>(millbuild.build)void -> -2038380948, millbuild.build$korn$#allIvyDeps()mill.define.Target -> 751674791, millbuild.build$korn$#allScalacOptions()mill.define.Target -> 563936060, millbuild.build$korn$#allSourceFiles()mill.define.Target -> 844162361, millbuild.build$korn$#allSources()mill.define.Target -> -1184348557, millbuild.build$korn$#ammoniteMainClass()mill.define.Task -> -1189801634, millbuild.build$korn$#ammoniteReplClasspath()mill.define.Target -> 715274420, millbuild.build$korn$#ammoniteVersion()mill.define.Target -> 491675301, millbuild.build$korn$#artifactId()mill.define.Target -> -309611903, millbuild.build$korn$#artifactName()mill.define.Target -> -637314148, millbuild.build$korn$#artifactNameParts()mill.define.Target -> -1652830387, millbuild.build$korn$#artifactScalaVersion()mill.define.Target -> 889262168, millbuild.build$korn$#artifactSuffix()mill.define.Target -> -1695289073, millbuild.build$korn$#assembly()mill.define.Target -> -1802412837, millbuild.build$korn$#assemblyRules()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#bindDependency()mill.define.Task -> -1189801634, millbuild.build$korn$#bspBuildTarget()mill.scalalib.bsp.BspBuildTarget -> -1189801634, millbuild.build$korn$#bspBuildTargetData()mill.define.Task -> -1189801634, millbuild.build$korn$#bspCompileClassesPath()mill.define.Target -> 1378124837, millbuild.build$korn$#bspCompileClasspath()mill.define.Target -> -1466769224, millbuild.build$korn$#bspCompiledClassesAndSemanticDbFiles()mill.define.Target -> -1552723751, millbuild.build$korn$#bspDisplayName()java.lang.String -> -1189801634, millbuild.build$korn$#bspDisplayName0()java.lang.String -> -1189801634, millbuild.build$korn$#bspLocalClasspath()mill.define.Target -> 417370426, millbuild.build$korn$#bspTransitiveCompileClasspath()mill.define.Target -> -1086811289, millbuild.build$korn$#bspTransitiveLocalClasspath()mill.define.Target -> 1409223746, millbuild.build$korn$#compile()mill.define.Target -> -1536074968, millbuild.build$korn$#compileClasspath()mill.define.Target -> -1711736693, millbuild.build$korn$#compileIvyDeps()mill.define.Target -> 2094890595, millbuild.build$korn$#compileModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#compileModuleDepsChecked()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#compileResources()mill.define.Target -> 1841663042, millbuild.build$korn$#compiledClassesAndSemanticDbFiles()mill.define.Target -> -1406561718, millbuild.build$korn$#console()mill.define.Command -> -1407031973, millbuild.build$korn$#coursierCacheCustomizer()mill.define.Task -> -1189801634, millbuild.build$korn$#crossFullScalaVersion()mill.define.Target -> -1924644806, millbuild.build$korn$#defaultCommandName()java.lang.String -> -79444598, millbuild.build$korn$#doRunBackground(os.Path,scala.collection.immutable.Seq,mill.api.AggWrapper$Agg,scala.collection.immutable.Seq,scala.collection.immutable.Map,java.lang.String,os.Path,boolean,scala.Option,scala.collection.immutable.Seq)scala.Function1 -> -1189801634, millbuild.build$korn$#docJar()mill.define.Target -> -60067842, millbuild.build$korn$#docJarUseArgsFile()mill.define.Target -> 744042545, millbuild.build$korn$#docResources()mill.define.Target -> 874781634, millbuild.build$korn$#docSources()mill.define.Target -> 115283256, millbuild.build$korn$#finalMainClass()mill.define.Target -> 662711201, millbuild.build$korn$#finalMainClassOpt()mill.define.Target -> -1428876062, millbuild.build$korn$#forkArgs()mill.define.Target -> 311155389, millbuild.build$korn$#forkEnv()mill.define.Target -> -437606842, millbuild.build$korn$#forkWorkingDir()mill.define.Target -> -1785314975, millbuild.build$korn$#generatedSources()mill.define.Target -> 79669257, millbuild.build$korn$#ideaCompileOutput()mill.define.Target -> 1543755379, millbuild.build$korn$#ideaConfigFiles(int)mill.define.Task -> 1028264280, millbuild.build$korn$#ideaJavaModuleFacets(int)mill.define.Task -> 1028264280, millbuild.build$korn$#intellijModulePath()os.Path -> 1028264280, millbuild.build$korn$#ivyDeps()mill.define.Target -> -1247541582, millbuild.build$korn$#ivyDepsTree$default$1()mill.scalalib.IvyDepsTreeArgs -> -1189801634, millbuild.build$korn$#ivyDepsTree(mill.scalalib.IvyDepsTreeArgs)mill.define.Command -> -1745758511, millbuild.build$korn$#jar()mill.define.Target -> -1431777765, millbuild.build$korn$#javacOptions()mill.define.Target -> 562215677, millbuild.build$korn$#javadocOptions()mill.define.Target -> 1967755458, millbuild.build$korn$#launcher()mill.define.Target -> 1589407009, millbuild.build$korn$#localClasspath()mill.define.Target -> 2065804332, millbuild.build$korn$#localCompileClasspath()mill.define.Target -> -1132940693, millbuild.build$korn$#mainClass()mill.define.Target -> -835090331, millbuild.build$korn$#mandatoryIvyDeps()mill.define.Target -> 677851909, millbuild.build$korn$#mandatoryScalacOptions()mill.define.Target -> -840490512, millbuild.build$korn$#manifest()mill.define.Target -> 1390448809, millbuild.build$korn$#mapDependencies()mill.define.Task -> -1189801634, millbuild.build$korn$#mill$define$Module$$millModuleDirectChildrenImpl$lzycompute()scala.collection.immutable.Seq -> 2068102634, millbuild.build$korn$#mill$define$Module$$millModuleDirectChildrenImpl()scala.collection.immutable.Seq -> 2068102634, millbuild.build$korn$#mill$scalalib$JavaModule$$recCompileModuleDeps$lzycompute()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#mill$scalalib$JavaModule$$recCompileModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#mill$scalalib$JavaModule$$recModuleDeps$lzycompute()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#mill$scalalib$JavaModule$$recModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#mill$scalalib$JavaModule$$super$bspBuildTarget()mill.scalalib.bsp.BspBuildTarget -> -1189801634, millbuild.build$korn$#mill$scalalib$JavaModule$$super$prepareOffline(mainargs.Flag)mill.define.Command -> -745341261, millbuild.build$korn$#mill$scalalib$ScalaModule$$super$bspBuildTarget()mill.scalalib.bsp.BspBuildTarget -> -1189801634, millbuild.build$korn$#mill$scalalib$ScalaModule$$super$mandatoryIvyDeps()mill.define.Target -> -849235301, millbuild.build$korn$#mill$scalalib$ScalaModule$$super$manifest()mill.define.Target -> 1549273673, millbuild.build$korn$#mill$scalalib$ScalaModule$$super$mapDependencies()mill.define.Task -> -1189801634, millbuild.build$korn$#mill$scalalib$ScalaModule$$super$prepareOffline(mainargs.Flag)mill.define.Command -> 788874045, millbuild.build$korn$#millInternal$lzycompute$1()void -> 2068102634, millbuild.build$korn$#millInternal()mill.define.Module$millInternal$ -> 2068102634, millbuild.build$korn$#millModuleBasePath()mill.define.Ctx$BasePath -> 2068102634, millbuild.build$korn$#millModuleDirectChildren()scala.collection.immutable.Seq -> 2068102634, millbuild.build$korn$#millModuleExternal()mill.define.Ctx$External -> 2068102634, millbuild.build$korn$#millModuleSegments()mill.define.Segments -> 2068102634, millbuild.build$korn$#millModuleShared()mill.define.Ctx$Foreign -> 2068102634, millbuild.build$korn$#millSourcePath()os.Path -> 2068102634, millbuild.build$korn$#moduleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#moduleDepsChecked()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#platformSuffix()mill.define.Target -> -685041274, millbuild.build$korn$#prepareOffline(mainargs.Flag)mill.define.Command -> -553952393, millbuild.build$korn$#prependShellScript()mill.define.Target -> 1606507060, millbuild.build$korn$#printDepsTree(boolean,mill.define.Task,scala.collection.immutable.List)mill.define.Task -> -1189801634, millbuild.build$korn$#recursiveModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#repl(scala.collection.immutable.Seq)mill.define.Command -> -1438442837, millbuild.build$korn$#repositoriesTask()mill.define.Task -> -1189801634, millbuild.build$korn$#resolutionCustomizer()mill.define.Task -> -1189801634, millbuild.build$korn$#resolveCoursierDependency()mill.define.Task -> -1189801634, millbuild.build$korn$#resolveDeps$default$2()boolean -> -1189801634, millbuild.build$korn$#resolveDeps(mill.define.Task,boolean)mill.define.Task -> -1189801634, millbuild.build$korn$#resolvePublishDependency()mill.define.Task -> -1189801634, millbuild.build$korn$#resolvedAmmoniteReplIvyDeps()mill.define.Target -> 1017380774, millbuild.build$korn$#resolvedIvyDeps()mill.define.Target -> -1805753691, millbuild.build$korn$#resolvedRunIvyDeps()mill.define.Target -> -226943046, millbuild.build$korn$#resolvedSemanticDbJavaPluginIvyDeps()mill.define.Target -> -1144099708, millbuild.build$korn$#resources()mill.define.Target -> 1701020761, millbuild.build$korn$#run$default$1()mill.define.Task -> -1189801634, millbuild.build$korn$#run(mill.define.Task)mill.define.Command -> 1672783137, millbuild.build$korn$#runBackground(scala.collection.immutable.Seq)mill.define.Command -> 878156296, millbuild.build$korn$#runBackgroundLogToConsole()boolean -> -1189801634, millbuild.build$korn$#runClasspath()mill.define.Target -> -375978363, millbuild.build$korn$#runIvyDeps()mill.define.Target -> 465289062, millbuild.build$korn$#runLocal$default$1()mill.define.Task -> -1189801634, millbuild.build$korn$#runLocal(mill.define.Task)mill.define.Command -> -321769051, millbuild.build$korn$#runMain(java.lang.String,scala.collection.immutable.Seq)mill.define.Command -> -620085134, millbuild.build$korn$#runMainBackground(java.lang.String,scala.collection.immutable.Seq)mill.define.Command -> 1338991587, millbuild.build$korn$#runMainLocal(java.lang.String,scala.collection.immutable.Seq)mill.define.Command -> -1439987951, millbuild.build$korn$#runUseArgsFile()mill.define.Target -> -48685416, millbuild.build$korn$#scalaCompilerClasspath()mill.define.Target -> -113157056, millbuild.build$korn$#scalaDocClasspath()mill.define.Target -> 2047150866, millbuild.build$korn$#scalaDocOptions()mill.define.Target -> 176621598, millbuild.build$korn$#scalaDocPluginClasspath()mill.define.Target -> -295520503, millbuild.build$korn$#scalaDocPluginIvyDeps()mill.define.Target -> -1215903412, millbuild.build$korn$#scalaLibraryIvyDeps()mill.define.Target -> 1926516677, millbuild.build$korn$#scalaOrganization()mill.define.Target -> -1808910766, millbuild.build$korn$#scalaVersion()mill.define.Target -> -2118924819, millbuild.build$korn$#scalacOptions()mill.define.Target -> -1831316931, millbuild.build$korn$#scalacPluginClasspath()mill.define.Target -> 931287923, millbuild.build$korn$#scalacPluginIvyDeps()mill.define.Target -> 1957013857, millbuild.build$korn$#semanticDbData()mill.define.Target -> -346931105, millbuild.build$korn$#semanticDbEnablePluginScalacOptions()mill.define.Target -> -1489125743, millbuild.build$korn$#semanticDbJavaVersion()mill.define.Target -> -529284211, millbuild.build$korn$#semanticDbPluginClasspath()mill.define.Target -> -478690156, millbuild.build$korn$#semanticDbPluginIvyDeps()mill.define.Target -> -1910509330, millbuild.build$korn$#semanticDbScalaVersion()mill.define.Target -> 729910006, millbuild.build$korn$#semanticDbVersion()mill.define.Target -> -1664107860, millbuild.build$korn$#showModuleDeps$default$1()boolean -> -1189801634, millbuild.build$korn$#showModuleDeps(boolean)mill.define.Command -> -1988833591, millbuild.build$korn$#skipIdea()boolean -> 1028264280, millbuild.build$korn$#sourceJar()mill.define.Target -> -925821800, millbuild.build$korn$#sources()mill.define.Target -> -915362042, millbuild.build$korn$#toString()java.lang.String -> 2068102634, millbuild.build$korn$#transitiveCompileClasspath()mill.define.Target -> 783930869, millbuild.build$korn$#transitiveCompileIvyDeps()mill.define.Target -> -444207358, millbuild.build$korn$#transitiveIvyDeps()mill.define.Target -> 1634092515, millbuild.build$korn$#transitiveLocalClasspath()mill.define.Target -> -1932941468, millbuild.build$korn$#transitiveModuleCompileModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#transitiveModuleDeps()scala.collection.immutable.Seq -> -1189801634, millbuild.build$korn$#unmanagedClasspath()mill.define.Target -> 1303869867, millbuild.build$korn$#upstreamAssembly()mill.define.Target -> 1922504391, millbuild.build$korn$#upstreamAssemblyClasspath()mill.define.Target -> -770660046, millbuild.build$korn$#upstreamCompileOutput()mill.define.Target -> 713977934, millbuild.build$korn$#zincReportCachedProblems()mill.define.Target -> -1872094045, millbuild.build$korn$#zincWorker()mill.define.ModuleRef -> -1189801634, millbuild.build$korn$.$anonfun$mainClass$1(millbuild.build$korn$)mill.define.TargetImpl -> -479513172, millbuild.build$korn$.$anonfun$mainClass$2(scala.collection.immutable.Seq,mill.api.Ctx)mill.api.Result -> 37461303, millbuild.build$korn$.$anonfun$mainClass$3()scala.Some -> -1121460533, millbuild.build$korn$.$anonfun$scalaVersion$1(millbuild.build$korn$)mill.define.TargetImpl -> -2146949528, millbuild.build$korn$.$anonfun$scalaVersion$2(scala.collection.immutable.Seq,mill.api.Ctx)mill.api.Result -> -1968729982, millbuild.build$korn$.$anonfun$scalaVersion$3()java.lang.String -> 1167315478, millbuild.build$korn$.$anonfun$unmanagedClasspath$1(millbuild.build$korn$)mill.define.TargetImpl -> -1458827362, millbuild.build$korn$.$anonfun$unmanagedClasspath$2(millbuild.build$korn$,scala.collection.immutable.Seq,mill.api.Ctx)mill.api.Result -> -1203103263, millbuild.build$korn$.$anonfun$unmanagedClasspath$3(millbuild.build$korn$)mill.api.AggWrapper$Agg -> -774589667, millbuild.build$korn$.$anonfun$unmanagedClasspath$4(os.Path)mill.api.PathRef -> -390335145, millbuild.build$korn$.$deserializeLambda$(java.lang.invoke.SerializedLambda)java.lang.Object -> -1822347360),false), EvaluatorImpl(/Users/westtide/.mill/ammonite,/Users/westtide/Developer/korn,/Users/westtide/Developer/korn/out/mill-build,/Users/westtide/Developer/korn/out/mill-build,,mill.util.PrefixLogger@368d5c00,481963126,0,HashMap(Segments(ArraySeq(Label(mill), Label(scalalib), Label(ZincWorkerModule), Label(worker))) -> (-1447494266,Val(mill.scalalib.worker.ZincWorkerImpl@aed0151))),HashMap(CONDA_SHLVL -> 1, CONDA_PYTHON_EXE -> /Users/westtide/opt/anaconda3/bin/python, XPC_SERVICE_NAME -> application.com.jetbrains.intellij.131114165.131115053, COPT_LICENSE_DIR -> /Applications/copt60, COMMAND_MODE -> unix2003, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS -> /Users/westtide/Library/WebKit/Databases, __CF_USER_TEXT_ENCODING -> 0x1F5:0x19:0x34, ZSH -> /Users/westtide/.oh-my-zsh, OCAML_TOPLEVEL_PATH -> /Users/westtide/.opam/4.14.1/lib/toplevel, CAML_LD_LIBRARY_PATH -> /Users/westtide/.opam/4.14.1/lib/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml, CONDA_PREFIX -> /Users/westtide/opt/anaconda3, LESS -> -R, CONDA_PROMPT_MODIFIER -> (base) , SSH_AUTH_SOCK -> /private/tmp/com.apple.launchd.T9WQqvpXzu/Listeners, SHELL -> /bin/zsh, LOGNAME -> westtide, PATH -> /opt/homebrew/opt/llvm/bin:/opt/homebrew/Cellar/llvm/17.0.6/bin/:/opt/homebrew/opt/sqlite/bin:/Users/westtide/.opam/4.14.1/bin:/opt/homebrew/opt/ruby/bin:/usr/local/opt/curl/bin:/usr/local/opt/curl/bin:/Applications/copt60/bin:/usr/local/opt/ruby/bin:/Users/westtide/opt/anaconda3/bin:/Users/westtide/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/westtide/.cargo/bin:/Users/westtide/Library/Application Support/JetBrains/Toolbox/scripts:/usr/local/bin:/Users/westtide/Library/Application Support/Coursier/bin, _CE_M -> , LSCOLORS -> Gxfxcxdxbxegedabagacad, HOMEBREW_REPOSITORY -> /opt/homebrew, HOMEBREW_CELLAR -> /opt/homebrew/Cellar, DYLD_LIBRARY_PATH -> /Applications/copt60/lib:, CONDA_EXE -> /Users/westtide/opt/anaconda3/bin/conda, CONDA_DEFAULT_ENV -> base, HOME -> /Users/westtide, HOMEBREW_PREFIX -> /opt/homebrew, INFOPATH -> /opt/homebrew/share/info:, USER -> westtide, MANPATH -> /opt/homebrew/share/man::, XPC_FLAGS -> 0x0, GPG_TTY -> not a tty, TMPDIR -> /var/folders/l0/035kjkgd0fj2x0brjx0bs7dh0000gn/T/, OPAM_SWITCH_PREFIX -> /Users/westtide/.opam/4.14.1, SHLVL -> 0, PWD -> /Users/westtide/Developer/korn, IDEA_INITIAL_DIRECTORY -> /, LC_CTYPE -> zh_CN.UTF-8, PAGER -> less, COPT_HOME -> /Applications/copt60, _CE_CONDA -> , __CFBundleIdentifier -> com.jetbrains.intellij),true,Some(1),Map(),Map(),false)))
+BspModules: Map(BuildTargetIdentifier [
+  uri = "file:///Users/westtide/Developer/korn/korn"
+] -> korn, BuildTargetIdentifier [
+  uri = "file:///Users/westtide/Developer/korn/mill-build"
+] -> mill-build/)
+workspaceBuildTargets took 592 msec
+workspaceBuildTargets result: WorkspaceBuildTargetsResult [
+  targets = SeqWrapper (
+    BuildTarget [
+      id = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      displayName = "korn"
+      baseDirectory = "file:///Users/westtide/Developer/korn/korn"
+      tags = SeqWrapper (
+        "library",
+        "application"
+      )
+      languageIds = SeqWrapper (
+        "java",
+        "scala"
+      )
+      dependencies = SeqWrapper ()
+      capabilities = BuildTargetCapabilities [
+        canCompile = true
+        canTest = false
+        canRun = true
+        canDebug = false
+      ]
+      dataKind = "scala"
+      data = ScalaBuildTarget [
+        scalaOrganization = "org.scala-lang"
+        scalaVersion = "2.13.12"
+        scalaBinaryVersion = "2.13"
+        platform = JVM
+        jars = SeqWrapper (
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar"
+        )
+        jvmBuildTarget = null
+      ]
+    ],
+    BuildTarget [
+      id = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      displayName = "mill-build/"
+      baseDirectory = "file:///Users/westtide/Developer/korn/mill-build"
+      tags = SeqWrapper (
+        "library",
+        "application"
+      )
+      languageIds = SeqWrapper (
+        "java",
+        "scala"
+      )
+      dependencies = SeqWrapper ()
+      capabilities = BuildTargetCapabilities [
+        canCompile = true
+        canTest = false
+        canRun = true
+        canDebug = false
+      ]
+      dataKind = "scala"
+      data = ScalaBuildTarget [
+        scalaOrganization = "org.scala-lang"
+        scalaVersion = "2.13.12"
+        scalaBinaryVersion = "2.13"
+        platform = JVM
+        jars = SeqWrapper (
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar",
+          "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar"
+        )
+        jvmBuildTarget = null
+      ]
+    ]
+  )
+]
+Entered buildTargetSources SourcesParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ],
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/mill-build"
+    ]
+  )
+]
+Entered buildTargetDependencySources DependencySourcesParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ],
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/mill-build"
+    ]
+  )
+]
+Entered buildTargetResources ResourcesParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ],
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/mill-build"
+    ]
+  )
+]
+Entered buildTargetOutputPaths OutputPathsParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ],
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/mill-build"
+    ]
+  )
+]
+Entered buildTargetScalacOptions ScalacOptionsParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ],
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/mill-build"
+    ]
+  )
+]
+buildTargetOutputPaths took 28 msec
+buildTargetOutputPaths result: OutputPathsResult [
+  items = MutableBufferWrapper (
+    OutputPathsItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      outputPaths = SeqWrapper (
+        OutputPathItem [
+          uri = "file:///Users/westtide/Developer/korn/out/"
+          kind = DIRECTORY
+        ]
+      )
+    ],
+    OutputPathsItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      outputPaths = SeqWrapper (
+        OutputPathItem [
+          uri = "file:///Users/westtide/Developer/korn/out/mill-build/"
+          kind = DIRECTORY
+        ]
+      )
+    ]
+  )
+]
+buildTargetResources took 46 msec
+buildTargetResources result: ResourcesResult [
+  items = SeqWrapper (
+    ResourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      resources = SeqWrapper ()
+    ],
+    ResourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      resources = SeqWrapper ()
+    ]
+  )
+]
+buildTargetSources took 84 msec
+buildTargetSources result: SourcesResult [
+  items = SeqWrapper (
+    SourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      sources = SeqWrapper (
+        SourceItem [
+          uri = "file:///Users/westtide/Developer/korn/korn/src"
+          kind = DIRECTORY
+          generated = false
+        ]
+      )
+      roots = null
+    ],
+    SourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      sources = SeqWrapper (
+        SourceItem [
+          uri = "file:///Users/westtide/Developer/korn/build.sc"
+          kind = FILE
+          generated = false
+        ],
+        SourceItem [
+          uri = "file:///Users/westtide/Developer/korn/build.sc"
+          kind = FILE
+          generated = false
+        ],
+        SourceItem [
+          uri = "file:///Users/westtide/Developer/korn/out/mill-build/generateScriptSources.dest"
+          kind = DIRECTORY
+          generated = true
+        ]
+      )
+      roots = null
+    ]
+  )
+]
+buildTargetScalacOptions took 128 msec
+buildTargetScalacOptions result: ScalacOptionsResult [
+  items = SeqWrapper (
+    ScalacOptionsItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      options = SeqWrapper ()
+      classpath = SeqWrapper (
+        "file:///Users/westtide/Developer/korn/korn/compile-resources",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-cc-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-rt-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/jflex-1.7.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar"
+      )
+      classDirectory = "file:///Users/westtide/Developer/korn/out/korn/compile.dest/classes"
+    ],
+    ScalacOptionsItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      options = SeqWrapper (
+        "-Xplugin:/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/scalac-mill-moduledefs-plugin_2.13.12/0.10.9/scalac-mill-moduledefs-plugin_2.13.12-0.10.9.jar",
+        "-Xplugin:/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-runner-linenumbers_2.13/0.11.5/mill-runner-linenumbers_2.13-0.11.5.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-moduledefs_2.13/0.10.9/mill-moduledefs_2.13-0.10.9.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar,/Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar",
+        "-deprecation",
+        "-Xplugin-require:mill-linenumber-plugin"
+      )
+      classpath = SeqWrapper (
+        "file:///Users/westtide/Developer/korn/mill-build/compile-resources",
+        "file:///Users/westtide/Developer/korn/out/mill-launcher/0.11.5.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-runner-linenumbers_2.13/0.11.5/mill-runner-linenumbers_2.13-0.11.5.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-moduledefs_2.13/0.10.9/mill-moduledefs_2.13-0.10.9.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar"
+      )
+      classDirectory = "file:///Users/westtide/Developer/korn/out/mill-build/compile.dest/classes"
+    ]
+  )
+]
+buildTargetDependencySources took 12051 msec
+buildTargetDependencySources result: DependencySourcesResult [
+  items = SeqWrapper (
+    DependencySourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      sources = SeqWrapper (
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-cc-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-rt-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/jflex-1.7.0.jar"
+      )
+    ],
+    DependencySourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/mill-build"
+      ]
+      sources = SeqWrapper (
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-moduledefs_2.13/0.10.9/mill-moduledefs_2.13-0.10.9-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0-sources.jar",
+        "file:///Users/westtide/Developer/korn/out/mill-launcher/0.11.5.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-runner-linenumbers_2.13/0.11.5/mill-runner-linenumbers_2.13-0.11.5.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-moduledefs_2.13/0.10.9/mill-moduledefs_2.13-0.10.9.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.22.0/jline-3.22.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-runner_2.13/0.11.5/mill-runner_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-idea_2.13/0.11.5/mill-idea_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-moduledefs_2.13/0.10.9/mill-moduledefs_2.13-0.10.9-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalalib_2.13/0.11.5/mill-scalalib_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalajslib_2.13/0.11.5/mill-scalajslib_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalanativelib_2.13/0.11.5/mill-scalanativelib_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-bsp_2.13/0.11.5/mill-bsp_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-runner-linenumbers_2.13/0.11.5/mill-runner-linenumbers_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-codesig_2.13/0.11.5/mill-main-codesig_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.12/scala-compiler-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/scalafmt-dynamic_2.13/3.7.14/scalafmt-dynamic_2.13-3.7.14-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main_2.13/0.11.5/mill-main_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalalib-api_2.13/0.11.5/mill-scalalib-api_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-testrunner_2.13/0.11.5/mill-testrunner_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalajslib-worker-api_2.13/0.11.5/mill-scalajslib-worker-api_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-scalanativelib-worker-api_2.13/0.11.5/mill-scalanativelib-worker-api_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.13/0.9.1/os-lib_2.13-0.9.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.8.1/pprint_2.13-0.8.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-util_2.13/0.11.5/mill-main-util_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.12/scala-reflect-2.13.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.23.0/jline-3.23.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.13.0/jna-5.13.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/scalafmt-interfaces/3.7.14/scalafmt-interfaces-3.7.14-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/interface/1.0.19/interface-1.0.19-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/windows-ansi/windows-ansi/0.0.5/windows-ansi-0.0.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mainargs_2.13/0.5.4/mainargs_2.13-0.5.4-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/requests_2.13/0.8.0/requests_2.13-0.8.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-eval_2.13/0.11.5/mill-main-eval_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-resolve_2.13/0.11.5/mill-main-resolve_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-client/0.11.5/mill-main-client-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-api_2.13/0.11.5/mill-main-api_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-testrunner-entrypoint/0.11.5/mill-testrunner-entrypoint-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.5/asm-9.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/1.0.0/geny_2.13-1.0.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.4.0/fansi_2.13-0.4.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier_2.13/2.1.7/coursier_2.13-2.1.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/mill-main-define_2.13/0.11.5/mill-main-define_2.13-0.11.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_2.13/3.1.3/upickle_2.13-3.1.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.13/2.13.5.2/jsoniter-scala-core_2.13-2.13.5.2-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-core_2.13/2.1.7/coursier-core_2.13-2.1.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.13/2.1.7/coursier-cache_2.13-2.1.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-proxy-setup/2.1.7/coursier-proxy-setup-2.1.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/jarjarabrams/jarjar-abrams-core_2.13/1.9.0/jarjar-abrams-core_2.13-1.9.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/scalaparse_2.13/3.0.2/scalaparse_2.13-3.0.2-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/kohlschutter/junixsocket/junixsocket-native-common/2.8.1/junixsocket-native-common-2.8.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/kohlschutter/junixsocket/junixsocket-common/2.8.1/junixsocket-common-2.8.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.13/3.1.3/ujson_2.13-3.1.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_2.13/3.1.3/upack_2.13-3.1.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_2.13/3.1.3/upickle-implicits_2.13-3.1.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/concurrent-reference-hash-map/1.1.0/concurrent-reference-hash-map-1.1.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.2.0/scala-xml_2.13-2.2.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-util_2.13/2.1.7/coursier-util_2.13-2.1.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/jniutils/windows-jni-utils/0.3.3/windows-jni-utils-0.3.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.8.0/plexus-archiver-4.8.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.1/plexus-container-default-2.1.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/config_2.13/0.2.1/config_2.13-0.2.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/jarjar/jarjar/1.9.0/jarjar-1.9.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/3.0.2/fastparse_2.13-3.0.2-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.13/3.1.3/upickle-core_2.13-3.1.3-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.5-5/zstd-jni-1.5.5-5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5-sources.jar",
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar"
+      )
+    ]
+  )
+]
+Entered buildTargetCompile CompileParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ]
+  )
+  originId = "88580e27-4b3c-4f34-9b6e-06d673926717"
+  arguments = null
+]
+Compiling compiler interface...
+[info] compiling 25 Scala sources and 4 Java sources to /Users/westtide/Developer/korn/out/korn/compile.dest/classes ...
+[warn] /Users/westtide/Developer/korn/korn/src/korn/Witness.scala:21:5: Exhaustivity analysis reached max recursion depth, not all missing cases are reported.
+[warn] (Please try with scalac -Ypatmat-exhaust-depth 40 or -Ypatmat-exhaust-depth off.)
+[warn]     param match {
+[warn]     ^
+[warn] /Users/westtide/Developer/korn/korn/src/korn/horn/Eval.scala:102:7: Exhaustivity analysis reached max recursion depth, not all missing cases are reported.
+[warn] (Please try with scalac -Ypatmat-exhaust-depth 40 or -Ypatmat-exhaust-depth off.)
+[warn]       lhs match {
+[warn]       ^
+[warn] 43 deprecations (since 2.13.0)
+[warn] 3 deprecations (since 2.13.3)
+[warn] 1 deprecation (since 2.13.7)
+[warn] 47 deprecations in total; re-run with -deprecation for details
+[warn] 6 warnings found
+[info] /Users/westtide/Developer/korn/korn/src/korn/c/Parser.java: 某些输入文件使用了未经检查或不安全的操作。
+[info] /Users/westtide/Developer/korn/korn/src/korn/c/Parser.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[info] done compiling
+buildTargetCompile took 13345 msec
+buildTargetCompile result: CompileResult [
+  originId = "88580e27-4b3c-4f34-9b6e-06d673926717"
+  statusCode = OK
+  dataKind = null
+  data = null
+]
+Entered buildTargetSources SourcesParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ]
+  )
+]
+buildTargetSources took 20 msec
+buildTargetSources result: SourcesResult [
+  items = SeqWrapper (
+    SourcesItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      sources = SeqWrapper (
+        SourceItem [
+          uri = "file:///Users/westtide/Developer/korn/korn/src"
+          kind = DIRECTORY
+          generated = false
+        ]
+      )
+      roots = null
+    ]
+  )
+]
+Entered jvmRunEnvironment JvmRunEnvironmentParams [
+  targets = ArrayList (
+    BuildTargetIdentifier [
+      uri = "file:///Users/westtide/Developer/korn/korn"
+    ]
+  )
+  originId = null
+]
+jvmRunEnvironment took 155 msec
+jvmRunEnvironment result: JvmRunEnvironmentResult [
+  items = SeqWrapper (
+    JvmEnvironmentItem [
+      target = BuildTargetIdentifier [
+        uri = "file:///Users/westtide/Developer/korn/korn"
+      ]
+      classpath = SeqWrapper (
+        "file:///Users/westtide/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+        "file:///Users/westtide/Developer/korn/korn/compile-resources",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-cc-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/beaver-rt-0.9.11.jar",
+        "file:///Users/westtide/Developer/korn/korn/lib/jflex-1.7.0.jar",
+        "file:///Users/westtide/Developer/korn/korn/resources",
+        "file:///Users/westtide/Developer/korn/out/korn/compile.dest/classes"
+      )
+      jvmOptions = SeqWrapper ()
+      workingDirectory = "/Users/westtide/Developer/korn"
+      environmentVariables = {CONDA_SHLVL=1, CONDA_PYTHON_EXE=/Users/westtide/opt/anaconda3/bin/python, XPC_SERVICE_NAME=application.com.jetbrains.intellij.131114165.131115053, COPT_LICENSE_DIR=/Applications/copt60, COMMAND_MODE=unix2003, SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS=/Users/westtide/Library/WebKit/Databases, __CF_USER_TEXT_ENCODING=0x1F5:0x19:0x34, ZSH=/Users/westtide/.oh-my-zsh, OCAML_TOPLEVEL_PATH=/Users/westtide/.opam/4.14.1/lib/toplevel, CAML_LD_LIBRARY_PATH=/Users/westtide/.opam/4.14.1/lib/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml/stublibs:/Users/westtide/.opam/4.14.1/lib/ocaml, CONDA_PREFIX=/Users/westtide/opt/anaconda3, LESS=-R, CONDA_PROMPT_MODIFIER=(base) , SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.T9WQqvpXzu/Listeners, SHELL=/bin/zsh, LOGNAME=westtide, PATH=/opt/homebrew/opt/llvm/bin:/opt/homebrew/Cellar/llvm/17.0.6/bin/:/opt/homebrew/opt/sqlite/bin:/Users/westtide/.opam/4.14.1/bin:/opt/homebrew/opt/ruby/bin:/usr/local/opt/curl/bin:/usr/local/opt/curl/bin:/Applications/copt60/bin:/usr/local/opt/ruby/bin:/Users/westtide/opt/anaconda3/bin:/Users/westtide/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Users/westtide/.cargo/bin:/Users/westtide/Library/Application Support/JetBrains/Toolbox/scripts:/usr/local/bin:/Users/westtide/Library/Application Support/Coursier/bin, _CE_M=, LSCOLORS=Gxfxcxdxbxegedabagacad, HOMEBREW_REPOSITORY=/opt/homebrew, HOMEBREW_CELLAR=/opt/homebrew/Cellar, DYLD_LIBRARY_PATH=/Applications/copt60/lib:, CONDA_EXE=/Users/westtide/opt/anaconda3/bin/conda, CONDA_DEFAULT_ENV=base, HOME=/Users/westtide, HOMEBREW_PREFIX=/opt/homebrew, INFOPATH=/opt/homebrew/share/info:, USER=westtide, MANPATH=/opt/homebrew/share/man::, XPC_FLAGS=0x0, GPG_TTY=not a tty, TMPDIR=/var/folders/l0/035kjkgd0fj2x0brjx0bs7dh0000gn/T/, OPAM_SWITCH_PREFIX=/Users/westtide/.opam/4.14.1, SHLVL=0, PWD=/Users/westtide/Developer/korn, IDEA_INITIAL_DIRECTORY=/, LC_CTYPE=zh_CN.UTF-8, PAGER=less, COPT_HOME=/Applications/copt60, _CE_CONDA=, __CFBundleIdentifier=com.jetbrains.intellij}
+      mainClasses = SeqWrapper (
+        JvmMainClass [
+          className = "korn.Main"
+          arguments = SeqWrapper ()
+        ],
+        JvmMainClass [
+          className = "korn.Main"
+          arguments = SeqWrapper ()
+        ]
+      )
+    ]
+  )
+]
+6月 08, 2024 9:32:41 上午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1
+Entered buildShutdown
+Shutdown build...
+Unsetting evaluator on session end
+Updating Evaluator: None
+Reload finished, result: mill.bsp.BspServerResult$Shutdown$@5bfc257
+BSP/startSession: Finished BSP session, result: mill.bsp.BspServerResult$Shutdown$@5bfc257
+Entered onBuildExit
+Exiting build...
+Exception in thread "Thread-0" java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:121)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor$1.get(ConcurrentMessageProcessor.java:54)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor$1.get(ConcurrentMessageProcessor.java:50)
+	at mill.bsp.worker.BspWorkerImpl.$anonfun$startBspServer$2(BspWorkerImpl.scala:86)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

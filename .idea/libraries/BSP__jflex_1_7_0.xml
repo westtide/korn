@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BSP: jflex-1.7.0" external-system-id="BSP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/korn/lib/jflex-1.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
