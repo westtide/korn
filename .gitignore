@@ -10,3 +10,5 @@ out/
 sv-benchmarks
 test/
 svcomp20/
+./.idea
+.DS_Store
